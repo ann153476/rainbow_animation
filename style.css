@@ -2,26 +2,47 @@ body{
     margin: 0;
     overflow: hidden;
 }
-.rainbow{
+button{
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.purple{
     display: flex;
     align-items: center;
     justify-content: center;
-  transition-property: background-image;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right, blue,rgb(204, 0, 255), red );
 }
-.rainbow__in{
+.purple__in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70vh;
     height: 70vh;
     border-radius: 50%;
     background-image: linear-gradient(to left,red ,rgb(204, 0, 255),blue  );
-
 }
-.rainbow__in:hover{
+.purple__in:hover{
     background-image: linear-gradient(to right,red ,rgb(204, 0, 255),blue  );
-    transform: rotate(0deg);
+    transition: all 2s linear, transform 2s ease-in-out;
+    transform: rotate(180deg);
+}
+.purple a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to left,red ,rgb(204, 0, 255),blue  );
+}
+.purple a:hover{
+    background-image: linear-gradient(to right,red ,rgb(204, 0, 255),blue  );
+    color: white;
+    transition: all 2s linear, transform 2s ease-in-out;
+    transform: rotate(180deg);
 }
